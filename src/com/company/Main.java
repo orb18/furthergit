@@ -5,7 +5,9 @@ import java.util.Scanner;
 import java.util.Vector;
 
 class SECURITY{
-    String sec_db[][] = new String[][];
+    String[][] sec_db = new String[100][2];
+
+    //for now we can just allocate a lot of memory space to the hardcoded bit
 
 
     void add_details(String shop){
@@ -43,6 +45,8 @@ public class Main {
                 "(3)que info");
         Scanner input1 = new Scanner(System.in);
         int choice_1 = input1.nextInt();
+
+
 
         if(choice_1 == 1){
             SECURITY new_scurity = new SECURITY();
